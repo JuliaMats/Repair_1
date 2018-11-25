@@ -6,8 +6,10 @@
 @import '_header.sass'
 
 @import '_main.sass'
+@import '_feedback.sass'
 
-
+*, *::after, *::before
+    box-sizing: border-box
 body
     font-family: 'Museo Sans Light', sans-serif
     color: $text-color
@@ -15,4 +17,4 @@ body
     width: 1170px
     margin: 0 auto
 img
-    min-width: 100%
+    max-width: 100%

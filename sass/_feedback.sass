@@ -1,0 +1,47 @@
+.feedback
+    padding: 94px 0
+    background: url(../img/feedback-bg.jpg) no-repeat center right -1%
+.form
+    max-width: 575px
+    &__title
+        font-size: 24px
+        +bold
+        line-height: 35px
+        margin-bottom: 49px
+    &__subtitle
+        display: block
+        margin-bottom: 50px
+    &__input
+        width: 270px
+        margin-bottom: 30px
+        &:first-child
+            margin-right: 30px
+    &__button
+        padding: 28px
+        width: 100%
+        font-size: 16px
+        margin-bottom: 31px
+    &-txt
+        display: flex
+        font-size: 15px
+        font-weight: 400
+        line-height: 24px
+        &__descr
+            width: 224px
+            margin-right: 91px
+        &__tel
+            display: flex
+            align-items: center
+        &__tel::before
+            display: block
+            width: 40px
+            height: 40px
+            margin-right: 19px
+            border-radius: 50%
+            border: 2px solid $input-border
+            content: '' 
+            background-image: url(../img/phone-receiver.png)
+            background-repeat: no-repeat
+            background-position: center
+
+            

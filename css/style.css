@@ -383,6 +383,13 @@ template {
   outline: none;
 }
 
+.input {
+  font-size: 15px;
+  padding: 25px;
+  border-radius: 10px;
+  border: 1px solid #dddddd;
+}
+
 .header-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -503,6 +510,84 @@ template {
   background-image: url("../img/paint-board.png");
 }
 
+.feedback {
+  padding: 94px 0;
+  background: url(../img/feedback-bg.jpg) no-repeat center right -1%;
+}
+
+.form {
+  max-width: 575px;
+}
+
+.form__title {
+  font-size: 24px;
+  font-family: 'Museo Sans Bold', sans-serif;
+  line-height: 35px;
+  margin-bottom: 49px;
+}
+
+.form__subtitle {
+  display: block;
+  margin-bottom: 50px;
+}
+
+.form__input {
+  width: 270px;
+  margin-bottom: 30px;
+}
+
+.form__input:first-child {
+  margin-right: 30px;
+}
+
+.form__button {
+  padding: 28px;
+  width: 100%;
+  font-size: 16px;
+  margin-bottom: 31px;
+}
+
+.form-txt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.form-txt__descr {
+  width: 224px;
+  margin-right: 91px;
+}
+
+.form-txt__tel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.form-txt__tel::before {
+  display: block;
+  width: 40px;
+  height: 40px;
+  margin-right: 19px;
+  border-radius: 50%;
+  border: 2px solid #dddddd;
+  content: '';
+  background-image: url(../img/phone-receiver.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+*, *::after, *::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 body {
   font-family: 'Museo Sans Light', sans-serif;
   color: #333333;
@@ -514,6 +599,6 @@ body {
 }
 
 img {
-  min-width: 100%;
+  max-width: 100%;
 }
 /*# sourceMappingURL=style.css.map */
