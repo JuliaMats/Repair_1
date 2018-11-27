@@ -474,7 +474,6 @@ template {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  min-width: 350px;
 }
 
 .main-advantage__item {
@@ -512,11 +511,21 @@ template {
 
 .feedback {
   padding: 94px 0;
-  background: url(../img/feedback-bg.jpg) no-repeat center right -1%;
+  background: url(../img/feedback-bg.jpg) no-repeat center left;
+  background-size: contain;
+  position: relative;
+  z-index: 1;
 }
 
-.form {
-  max-width: 575px;
+.feedback:before {
+  content: '';
+  left: 0;
+  top: 0;
+  width: 60%;
+  height: 100%;
+  background-color: #fff;
+  position: absolute;
+  z-index: -1;
 }
 
 .form__title {
@@ -532,7 +541,7 @@ template {
 }
 
 .form__input {
-  width: 270px;
+  width: 50%;
   margin-bottom: 30px;
 }
 
@@ -557,7 +566,7 @@ template {
 }
 
 .form-txt__descr {
-  width: 224px;
+  width: 45%;
   margin-right: 91px;
 }
 
@@ -600,5 +609,89 @@ body {
 
 img {
   max-width: 100%;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    width: 970px;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    width: 767px;
+  }
+  .main-text__title {
+    font-size: 33px;
+    line-height: 36px;
+  }
+  .main-text__title span {
+    font-size: 16px;
+  }
+  .feedback {
+    background: #fff;
+  }
+  .feedback form {
+    text-align: center;
+  }
+  .feedback form input:first-child {
+    margin-right: 0;
+  }
+  .feedback form button {
+    width: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  .hidden-xs {
+    display: none;
+  }
+  .container {
+    width: 95%;
+  }
+  .main-wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main-txt {
+    max-width: 400px;
+    margin: auto;
+  }
+  .main-txt__title {
+    text-align: center;
+  }
+  .main-advantage {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .main-advantage__img {
+    margin-le: 0;
+  }
+  .header-txt {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .header-txt__phone {
+    font-style: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .main-text__title {
+    font-style: 15px;
+    line-height: 20px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

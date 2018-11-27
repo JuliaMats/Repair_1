@@ -1,8 +1,19 @@
 .feedback
     padding: 94px 0
-    background: url(../img/feedback-bg.jpg) no-repeat center right -1%
+    background: url(../img/feedback-bg.jpg) no-repeat center left
+    background-size: contain
+    position: relative
+    z-index: 1
+    &:before
+        content: ''
+        left: 0
+        top: 0
+        width: 60%
+        height: 100%
+        background-color: #fff
+        position: absolute
+        z-index: -1   
 .form
-    max-width: 575px
     &__title
         font-size: 24px
         +bold
@@ -12,7 +23,7 @@
         display: block
         margin-bottom: 50px
     &__input
-        width: 270px
+        width: 50%
         margin-bottom: 30px
         &:first-child
             margin-right: 30px
@@ -27,7 +38,7 @@
         font-weight: 400
         line-height: 24px
         &__descr
-            width: 224px
+            width: 45%
             margin-right: 91px
         &__tel
             display: flex
