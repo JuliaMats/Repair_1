@@ -1,12 +1,11 @@
 .feedback
+    &-wrap
     display: flex
     justify-content: space-between
+    flex-wrap: wrap
 .form
-    padding-left: 360px
     padding-top: 92px
-    width: 95%
-    &-img__block
-        height: 100%
+    flex-basis: 50%-15px
     &__title
         font-size: 24px
         +bold
@@ -16,12 +15,10 @@
         display: block
         margin-bottom: 50px
     &__input
-        width: 40%
         margin-bottom: 30px
         &:first-child
             margin-right: 30px
     &__button
-        padding: 28px 140px 28px 140px
         font-size: 16px
         margin-bottom: 31px
     &-txt
@@ -32,7 +29,6 @@
         margin-bottom: 95px
         &__descr
             width: 45%
-            margin-right: 70px
         &__tel
             display: flex
             align-items: center
@@ -47,5 +43,6 @@
             background-image: url(../img/phone-receiver.png)
             background-repeat: no-repeat
             background-position: center
-
+.img-block
+    flex-basis: 50%-15px
             
