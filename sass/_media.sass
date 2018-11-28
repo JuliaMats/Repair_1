@@ -6,7 +6,7 @@
     .container
         width: 767px
     .main
-        &-text
+        &-txt
             &__title
                 font-size: 33px
                 line-height: 36px
@@ -22,7 +22,9 @@
             button
                 width: 50%
 
-@media (max-width: 768px)
+@media (max-width: 830px)
+    .container
+        width: 576px
     .hidden-xs
         display: none
     .container
@@ -38,7 +40,6 @@
         &-advantage
             display: flex
             flex-direction: column
-            align-items: center
             &__img
                 margin-left: 0
     .header
@@ -63,7 +64,18 @@
     .hidden-xs
         display: none
 
+@media (max-width: 375px)
     .header
+        &-text
+            display: flex
+            flex-direction: column
+            align-items: center
+            &__contacts
+                text-align: center
+                margin-bottom: 10px
+                margin-right: 0
+
+
 
 
 

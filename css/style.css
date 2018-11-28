@@ -516,16 +516,14 @@ template {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .form {
-  padding-left: 360px;
   padding-top: 92px;
-  width: 95%;
-}
-
-.form-img__block {
-  height: 100%;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
 }
 
 .form__title {
@@ -541,7 +539,6 @@ template {
 }
 
 .form__input {
-  width: 40%;
   margin-bottom: 30px;
 }
 
@@ -550,7 +547,6 @@ template {
 }
 
 .form__button {
-  padding: 28px 140px 28px 140px;
   font-size: 16px;
   margin-bottom: 31px;
 }
@@ -567,7 +563,6 @@ template {
 
 .form-txt__descr {
   width: 45%;
-  margin-right: 70px;
 }
 
 .form-txt__tel {
@@ -590,6 +585,11 @@ template {
   background-image: url(../img/phone-receiver.png);
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.img-block {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
 }
 
 *, *::after, *::before {
@@ -621,11 +621,11 @@ img {
   .container {
     width: 767px;
   }
-  .main-text__title {
+  .main-txt__title {
     font-size: 33px;
     line-height: 36px;
   }
-  .main-text__title span {
+  .main-txt__title span {
     font-size: 16px;
   }
   .feedback {
@@ -642,7 +642,10 @@ img {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 830px) {
+  .container {
+    width: 576px;
+  }
   .hidden-xs {
     display: none;
   }
@@ -670,9 +673,6 @@ img {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
   }
   .main-advantage__img {
     margin-left: 0;
@@ -707,6 +707,26 @@ img {
   }
   .hidden-xs {
     display: none;
+  }
+}
+
+@media (max-width: 375px) {
+  .header-text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header-text__contacts {
+    text-align: center;
+    margin-bottom: 10px;
+    margin-right: 0;
   }
 }
 /*# sourceMappingURL=style.css.map */
