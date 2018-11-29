@@ -1,11 +1,19 @@
 .feedback
-    &-wrap
-    display: flex
-    justify-content: space-between
-    flex-wrap: wrap
+    padding: 94px 0
+    background: url(../img/feedback-bg.jpg) no-repeat right
+    background-size: contain
+    position: relative
+    z-index: 1
+    &:before
+        content: ''
+        width: 55%
+        height: 100%
+        position: absolute
+        z-index: -1
+        top: 0
+        left: 0
 .form
-    padding-top: 92px
-    flex-basis: 50%
+    max-width: 575px
     &__title
         font-size: 24px
         +bold
@@ -15,12 +23,14 @@
         display: block
         margin-bottom: 50px
     &__input
+        width: 47%
         margin-bottom: 30px
         &:first-child
             margin-right: 30px
     &__button
         font-size: 16px
         margin-bottom: 31px
+        width: 100%
     &-txt
         display: flex
         font-size: 15px
@@ -43,6 +53,4 @@
             background-image: url(../img/phone-receiver.png)
             background-repeat: no-repeat
             background-position: center
-.img-block
-    flex-basis: 50%
             

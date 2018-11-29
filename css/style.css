@@ -510,20 +510,25 @@ template {
 }
 
 .feedback {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  padding: 94px 0;
+  background: url(../img/feedback-bg.jpg) no-repeat right;
+  background-size: contain;
+  position: relative;
+  z-index: 1;
+}
+
+.feedback:before {
+  content: '';
+  width: 55%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
 }
 
 .form {
-  padding-top: 92px;
-  -ms-flex-preferred-size: 50%;
-      flex-basis: 50%;
+  max-width: 575px;
 }
 
 .form__title {
@@ -539,6 +544,7 @@ template {
 }
 
 .form__input {
+  width: 47%;
   margin-bottom: 30px;
 }
 
@@ -549,6 +555,7 @@ template {
 .form__button {
   font-size: 16px;
   margin-bottom: 31px;
+  width: 100%;
 }
 
 .form-txt {
@@ -585,11 +592,6 @@ template {
   background-image: url(../img/phone-receiver.png);
   background-repeat: no-repeat;
   background-position: center;
-}
-
-.img-block {
-  -ms-flex-preferred-size: 50%;
-      flex-basis: 50%;
 }
 
 *, *::after, *::before {
