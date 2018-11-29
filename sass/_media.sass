@@ -1,12 +1,19 @@
 @media (max-width: 1200px)
     .container
         width: 970px
+    .form-txt
+        font-size: 12px
     
 @media (max-width: 992px)
+    .header
+        &-txt
+            flex-direction: column
+            &__phone
+                font-size: 10px
     .container
         width: 767px
     .main
-        padding: 25px 0
+        padding: 5px 0
         &-wrap
             flex-direction: column
         &-txt
@@ -15,7 +22,7 @@
             margin: auto
             &__title
                 text-align: center
-                font-size: 40px
+                font-size: 35px
                 margin-bottom: 28px
                 span
                     font-size: 17px
@@ -38,6 +45,7 @@
         input
             width: 100%
     .form-txt
+        font-size: 15px
         &__descr, &__tel
             width: 100%
             text-align: center
@@ -52,6 +60,7 @@
     .hidden-xs
         display: none
     .main
+        margin-bottom: 10px
         &-wrap
             flex-direction: column
         &-txt
@@ -68,10 +77,10 @@
         &-img
             width: 100%
     .header
-        &-txt
+        &-wrap
             flex-direction: column
-            &__phone
-                font-size: 10px
+        &-logo
+            text-align: right
     .feedback:before
         display: none
     .form
@@ -81,10 +90,17 @@
     .container
         width: 80%
     .header
-        &-wrap
+        &-text
+            display: flex
             flex-direction: column
-        &-logo
-            text-align: right
+            align-items: center
+            &__contacts
+                text-align: center
+                margin-bottom: 10px
+                margin-right: 0 
+    .button
+        padding: 20px 25px
+        margin-bottom: 10px
     .main
         &-txt
             &__title
