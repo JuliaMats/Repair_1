@@ -17,22 +17,26 @@
         form
             text-align: center
             input
-                &:first-child
-                    margin-right: 0
-            button
-                width: 50%
+                width: 100%
+    .form-txt
+        &__descr, &__tel
+            width: 100%
+            text-align: center
+        &__tel
+            justify-content: center
+        &__tel::before
+            display: none
 
 @media (max-width: 830px)
     .container
         width: 576px
     .hidden-xs
         display: none
-    .container
-        width: 95%
     .main
         &-wrap
             flex-direction: column
         &-txt
+            width: 100%
             max-width: 400px
             margin: auto
             &__title
@@ -42,13 +46,21 @@
             flex-direction: column
             &__img
                 margin-left: 0
+        &-img
+            width: 100%
     .header
         &-txt
             flex-direction: column
             &__phone
                 font-size: 10px
+    .feedback:before
+        display: none
+    .form
+        width: 100%
 
 @media (max-width: 576px)
+    .container
+        width: 90%
     .header
         &-wrap
             flex-direction: column
