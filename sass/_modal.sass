@@ -1,0 +1,32 @@
+.modal
+    position: fixed
+    width: 100%
+    height: 100%
+    background-color: rgba(#000, 0.52)
+    left: 0
+    top: 0
+    z-index: 99
+    &_hidden
+        display: none
+    &_visible
+        display: flex
+    &__dialog
+        margin: auto
+        width: 1170px
+        height: 640px
+        background-color: #fff
+        display: flex
+        position: relative
+    &__close
+        position: absolute
+        top: 5px
+        right: 5px
+        &:hover
+            cursor: pointer
+    &-wrap
+        display: flex
+        justify-content: space-between
+        flex-direction: row
+    &-text__bath
+        display: flex
+        justify-content: space-between

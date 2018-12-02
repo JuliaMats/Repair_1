@@ -20,7 +20,7 @@
                     <a class="header-text__phone" href="tel:+74954225131">+7 (495) 42-251-31</a>
                 </div>
                 <div class="header-text__button">
-                    <button class="button">Перезвоните <span class="hidden-xs">мне</span></button>
+                    <button class="button" id="button-callback">Перезвоните <span class="hidden-xs">мне</span></button>
                 </div>
             </div>
         </div>
@@ -87,5 +87,74 @@
         </div>
     </div>
     </section>
+
+    <div class="modal modal_hidden" id="modal-callback">
+        <div class="modal__dialog">
+            <div class="modal__close">&#10006;</div>
+
+                <div class="modal-wrap">
+                    
+                    <div class="modal-text">
+                        <div class="modal-text__bath">
+                            <img src="img/bath.png" alt="bath" class="modal-img">
+                            <p>Ванная комната</p>
+                            <img src="img/line.png" alt="line" class="modal-img__line">
+                                <span>135*150 - 31 000 руб.<br> 170*170 - 43 000 руб.</span>      
+                        </div>
+                        <div class="modal-text__toilet">
+                            <img src="img/toilet.png" alt="toilet" class="modal-img">
+                            <p>Туалет</p>
+                            <img src="img/line.png" alt="line" class="modal-img__line">
+                                <span>135*70 - 14 000 руб.</span>
+                        </div>
+                        <div class="modal-text__room">
+                                <img src="img/bathroom.png" alt="bathroom" class="modal-img">
+                                <p>Совмещенный санузел</p>
+                            <img src="img/line.png" alt="line" class="modal-img__line">
+                                <span>170*210 - 54 000 руб.</span>
+                            </div>
+
+                    </div>
+
+                    <div class="modal-form">
+                        <div class="form">
+                        <h2 class="form__title">Узнайте точную стоимость <br> ремонта по телефону!</h2>
+                        <span class="form__subtitle">Заполните поля ниже - мы свяжемся с Вами</span>
+                        <form action="#">
+                            <input type="text" class="input input-name form__input" placeholder="Ваше имя">
+                            <input type="tel" class="input input-tel form__input" pattern="[+]7-[0-9]{3}-[0-9]{2}-[0-9]{2}-[0-9]{3}" required placeholder="Ваш телефон">
+                            <button type="submit" class="button form__button">Узнать стоимость</button>
+                        </form>
+                        <div class="modal-form__descr">
+                            <div class="modal-form__txt"><span>Или Вы можете перезвонить нам сами <br> по телефону:</span></div>
+                                <div class="modal-form__tel">
+                                    <span><a class="header-text__phone" href="tel:+78182425131">+7 (8182) 42-51-31</a></span>
+                                </div>    
+                                </div>
+                                
+                            </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div> 
+    </div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('#button-callback').on('click', function() {
+            $('#modal-callback').removeClass('modal_hidden');
+            $('#modal-callback').addClass('modal_visible'); 
+        });
+        $('.modal__close').on('click', function() {
+            $('.modal').removeClass('modal_visible');
+            $('.modal').addClass('modal_hidden');
+        });
+    });
+</script>
+
 </body>
 </html>
