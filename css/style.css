@@ -536,7 +536,6 @@ template {
 }
 
 .form {
-  width: calc(50% - 15px);
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -628,9 +627,6 @@ template {
   left: 0;
   top: 0;
   z-index: 99;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 .modal_hidden {
@@ -646,17 +642,11 @@ template {
 .modal__dialog {
   margin: auto;
   width: 1170px;
-  height: 640px;
+  height: 674px;
   background-color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   position: relative;
 }
 
@@ -668,6 +658,210 @@ template {
 
 .modal__close:hover {
   cursor: pointer;
+}
+
+.modal-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 785px;
+  background-color: #f7f7f7;
+}
+
+.modal-img {
+  max-width: 120px;
+  margin-bottom: 15px;
+  margin-right: 29px;
+}
+
+.modal-img__line {
+  margin-top: 13px;
+  margin-bottom: 12px;
+  max-width: 42px;
+}
+
+.modal-descr__bath {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-height: 85px;
+  margin: 0;
+}
+
+.modal-descr__bath p {
+  margin: 0;
+  font-family: 'Museo Sans Bold', sans-serif;
+}
+
+.modal-descr__bath .price {
+  font-family: 'Museo Sans Bold', sans-serif;
+}
+
+.modal-descr__toilet {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-height: 85px;
+  margin: 0;
+}
+
+.modal-descr__toilet p {
+  margin: 0;
+  font-family: 'Museo Sans Bold', sans-serif;
+}
+
+.modal-descr__toilet .price {
+  font-family: 'Museo Sans Bold', sans-serif;
+}
+
+.modal-descr__room {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-height: 85px;
+  margin: 0;
+}
+
+.modal-descr__room p {
+  margin: 0;
+  font-family: 'Museo Sans Bold', sans-serif;
+}
+
+.modal-descr__room .price {
+  font-family: 'Museo Sans Bold', sans-serif;
+}
+
+.modal-text {
+  padding-top: 80px;
+  padding-left: 79px;
+  -ms-flex-preferred-size: 87%;
+      flex-basis: 87%;
+  margin: 0;
+}
+
+.modal-text__bath {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.modal-text__toilet {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.modal-text__room {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.modal ul {
+  padding-left: 17px;
+}
+
+.modal li {
+  color: #ffd200;
+}
+
+.modal li span {
+  color: #000000;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.modal-form {
+  margin: 0;
+  text-align: center;
+  padding-top: 80px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.modal-form__phone {
+  font-size: 24px;
+  font-weight: 400;
+  text-decoration: none;
+  color: #333333;
+  font-family: 'Museo Sans Bold', sans-serif;
+  margin-top: 13px;
+}
+
+.modal-form__descr {
+  text-align: center;
+}
+
+.modal-form__input {
+  width: 90%;
+  margin-bottom: 15px;
+}
+
+.modal-form__button {
+  width: 90%;
+  margin-bottom: 33px;
+}
+
+.modal-form__txt {
+  padding-bottom: 13px;
+}
+
+.modal-form_phone {
+  padding-bottom: 76px;
+}
+
+.form {
+  text-align: center;
+  margin-bottom: 76px;
+}
+
+.form__title {
+  text-align: center;
+  margin-top: 0;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 33px;
+  margin-bottom: 52px;
+}
+
+.form__subtitle {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 35px;
+  margin-bottom: 52px;
+}
+
+.form-wrap {
+  display: inline-block;
+  padding: 0;
 }
 
 *, *::after, *::before {

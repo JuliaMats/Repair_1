@@ -13,7 +13,7 @@
     &__dialog
         margin: auto
         width: 1170px
-        height: 640px
+        height: 674px
         background-color: #fff
         display: flex
         position: relative
@@ -26,9 +26,111 @@
     &-wrap
         display: flex
         justify-content: space-between
-        flex-direction: row
-        width: 100%
-        padding: 0
-    &-text__bath
+        width: 785px
+        background-color: #f7f7f7
+    &-img
+        max-width: 120px
+        margin-bottom: 15px
+        margin-right: 29px
+        &__line
+            margin-top: 13px
+            margin-bottom: 12px
+            max-width: 42px
+    &-descr__bath
         display: flex
-        justify-content: space-between
+        flex-direction: column
+        justify-content: center
+        max-height: 85px
+        margin: 0
+        p
+            margin: 0
+            +bold
+        .price
+            +bold
+    &-descr__toilet
+        display: flex
+        flex-direction: column
+        justify-content: center
+        max-height: 85px
+        margin: 0
+        p
+            margin: 0
+            +bold
+        .price
+            +bold
+    &-descr__room
+        display: flex
+        flex-direction: column
+        justify-content: center
+        max-height: 85px
+        margin: 0
+        p
+            margin: 0
+            +bold
+        .price
+            +bold
+    &-text
+        padding-top: 80px
+        
+        padding-left: 79px
+        flex-basis: 87%
+        margin: 0
+        &__bath
+            display: flex
+            justify-content: flex-start
+        &__toilet
+            display: flex
+        &__room
+            display: flex
+    ul
+        padding-left: 17px
+    li
+        color: $primary-color
+        span
+            color: #000000
+            font-size: 14px
+            font-weight: 400
+    &-form
+        margin: 0
+        text-align: center
+        padding-top: 80px
+        padding-left: 100px
+        padding-right: 100px
+        &__phone
+            font-size: 24px
+            font-weight: 400
+            text-decoration: none
+            color: $text-color
+            +bold
+            margin-top: 13px
+        &__descr
+            text-align: center
+        &__input
+            width: 90%
+            margin-bottom: 15px
+        &__button
+            width: 90%
+            margin-bottom: 33px
+        &__txt
+            padding-bottom: 13px
+        &_phone
+            padding-bottom: 76px
+.form 
+    text-align: center  
+    margin-bottom: 76px 
+    &__title
+        text-align: center
+        margin-top: 0
+        font-size: 22px
+        font-weight: 400
+        line-height: 33px
+        margin-bottom: 52px
+    &__subtitle
+        text-align: center
+        font-size: 16px
+        font-weight: 400
+        line-height: 35px
+        margin-bottom: 52px
+.form-wrap
+    display: inline-block
+    padding: 0      
