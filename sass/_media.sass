@@ -7,11 +7,18 @@
         &__item
             img
                 max-width: 95%
-    .modal-dialog
-        width: 950px
+    .modal
+        &-wrap
+            padding-left: 45px
         
-    
 @media (max-width: 992px)
+    .modal
+        &-wrap
+            padding-left: 30px
+        &-text
+            padding-top: 40px
+        &-form
+            padding-top: 30px
     .header
         &-txt
             flex-direction: column
@@ -63,6 +70,18 @@
             display: none
 
 @media (max-width: 830px)
+    .modal
+        &-wrap
+            display: none
+        &-form
+            padding-top: 46px
+            width: 100%
+    .form-wrap
+        display: flex
+        flex-direction: column
+        align-items: center
+    .items
+        display: none
     .container
         width: 576px
     .hidden-xs
@@ -95,6 +114,17 @@
         width: 100%
 
 @media (max-width: 620px)
+    .modal
+        &-form
+            &__input
+                width: 90%
+            &__button
+                width: 90%
+            &__txt
+                padding-top: 25px
+            &__tel
+                padding-top: 25px
+
     .container
         width: 80%
     .header
@@ -127,6 +157,7 @@
         &-txt
             flex-direction: column
             justify-content: center
+    
 
 @media (max-width: 375px)
     .container
@@ -160,8 +191,14 @@
         &__subtitle
             margin-bottom: 25px
             text-align: center
+            font-size: 14px
         input
             margin-bottom: 20px
+    .modal
+        &-form__txt
+            font-size: 14px
+        &-form_phone
+            font-size: 22px
 
 
 

@@ -665,10 +665,10 @@ template {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 50%;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-right: 113px;
   padding-left: 79px;
   background-color: #f7f7f7;
 }
@@ -801,9 +801,8 @@ template {
 
 .modal-form {
   text-align: center;
+  width: 50%;
   padding-top: 59px;
-  margin-left: 100px;
-  margin-right: 100px;
   margin-bottom: 76px;
 }
 
@@ -863,6 +862,10 @@ template {
   margin-bottom: 40px;
 }
 
+.items {
+  width: 100%;
+}
+
 .items-name {
   margin-top: 40px;
 }
@@ -906,12 +909,21 @@ img {
   .slider__item img {
     max-width: 95%;
   }
-  .modal-dialog {
-    width: 950px;
+  .modal-wrap {
+    padding-left: 45px;
   }
 }
 
 @media (max-width: 992px) {
+  .modal-wrap {
+    padding-left: 30px;
+  }
+  .modal-text {
+    padding-top: 40px;
+  }
+  .modal-form {
+    padding-top: 30px;
+  }
   .header-txt {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -997,6 +1009,28 @@ img {
 }
 
 @media (max-width: 830px) {
+  .modal-wrap {
+    display: none;
+  }
+  .modal-form {
+    padding-top: 46px;
+    width: 100%;
+  }
+  .form-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .items {
+    display: none;
+  }
   .container {
     width: 576px;
   }
@@ -1053,6 +1087,18 @@ img {
 }
 
 @media (max-width: 620px) {
+  .modal-form__input {
+    width: 90%;
+  }
+  .modal-form__button {
+    width: 90%;
+  }
+  .modal-form__txt {
+    padding-top: 25px;
+  }
+  .modal-form__tel {
+    padding-top: 25px;
+  }
   .container {
     width: 80%;
   }
@@ -1151,9 +1197,16 @@ img {
   .form__subtitle {
     margin-bottom: 25px;
     text-align: center;
+    font-size: 14px;
   }
   .form input {
     margin-bottom: 20px;
+  }
+  .modal-form__txt {
+    font-size: 14px;
+  }
+  .modal-form_phone {
+    font-size: 22px;
   }
 }
 /*# sourceMappingURL=style.css.map */
