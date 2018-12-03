@@ -668,7 +668,8 @@ template {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 785px;
+  padding-right: 113px;
+  padding-left: 79px;
   background-color: #f7f7f7;
 }
 
@@ -758,9 +759,6 @@ template {
 
 .modal-text {
   padding-top: 80px;
-  padding-left: 79px;
-  -ms-flex-preferred-size: 87%;
-      flex-basis: 87%;
   margin: 0;
 }
 
@@ -787,6 +785,7 @@ template {
 
 .modal ul {
   padding-left: 17px;
+  line-height: 25px;
 }
 
 .modal li {
@@ -794,40 +793,44 @@ template {
 }
 
 .modal li span {
-  color: #000000;
   font-size: 14px;
   font-weight: 400;
+  line-height: 25px;
+  color: #000000;
 }
 
 .modal-form {
-  margin: 0;
   text-align: center;
-  padding-top: 80px;
-  padding-left: 100px;
-  padding-right: 100px;
-}
-
-.modal-form__phone {
-  font-size: 24px;
-  font-weight: 400;
-  text-decoration: none;
-  color: #333333;
-  font-family: 'Museo Sans Bold', sans-serif;
-  margin-top: 13px;
-}
-
-.modal-form__descr {
-  text-align: center;
+  padding-top: 59px;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-bottom: 76px;
 }
 
 .modal-form__input {
-  width: 90%;
+  width: 370px;
+  height: 65px;
+  width: 370px;
   margin-bottom: 15px;
 }
 
 .modal-form__button {
-  width: 90%;
+  margin-top: 15px;
+  width: 368px;
   margin-bottom: 33px;
+}
+
+.modal-form__phone {
+  font-size: 24px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #333333;
+  margin-top: 13px;
+  margin-bottom: 76px;
+}
+
+.modal-form__descr {
+  text-align: center;
 }
 
 .modal-form__txt {
@@ -835,29 +838,7 @@ template {
 }
 
 .modal-form_phone {
-  padding-bottom: 76px;
-}
-
-.form {
-  text-align: center;
   margin-bottom: 76px;
-}
-
-.form__title {
-  text-align: center;
-  margin-top: 0;
-  font-size: 22px;
-  font-weight: 400;
-  line-height: 33px;
-  margin-bottom: 52px;
-}
-
-.form__subtitle {
-  text-align: center;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 35px;
-  margin-bottom: 52px;
 }
 
 .form-wrap {
@@ -865,15 +846,25 @@ template {
   padding: 0;
 }
 
-.portfolio {
-  background-color: #f5f5f5;
-  padding: 100px 0;
+.form__title {
+  text-align: center;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 33px;
+  margin-bottom: 45px;
+  margin-top: 10px;
 }
 
-.slider__item {
-  width: 370px;
-  height: 280px;
-  background-color: #000000;
+.form__subtitle {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 35px;
+  margin-bottom: 40px;
+}
+
+.items-name {
+  margin-top: 40px;
 }
 
 *, *::after, *::before {
@@ -911,6 +902,12 @@ img {
   }
   .form-txt {
     font-size: 12px;
+  }
+  .slider__item img {
+    max-width: 95%;
+  }
+  .modal-dialog {
+    width: 950px;
   }
 }
 
