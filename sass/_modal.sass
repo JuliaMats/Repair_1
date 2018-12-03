@@ -84,26 +84,34 @@
             display: flex
     ul
         padding-left: 17px
+        line-height: 25px
     li
         color: $primary-color
         span
-            color: #000000
             font-size: 14px
-            font-weight: 400
+            font-weight: 400 
+            line-height: 25px
     &-form
         margin: 0
         text-align: center
         padding-top: 80px
         padding-left: 100px
         padding-right: 100px 
-        margin-bottom: 76px 
+        margin-bottom: 76px
+        &__input
+            width: 370px
+            height: 65px
+            margin-top: 15px
+        &__button
+            margin-top: 30px
     &__phone
             font-size: 24px
             font-weight: 400
+            +bold
             text-decoration: none
             color: $text-color
-            +bold
             margin-top: 13px
+            margin-bottom: 76px
         &__descr
             text-align: center
         &__input
@@ -131,4 +139,4 @@
         margin-bottom: 52px
 .form-wrap
     display: inline-block
-    padding: 0      
+    padding: 0
