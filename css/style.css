@@ -622,8 +622,8 @@ template {
 
 .modal {
   position: fixed;
-  width: 100%;
-  height: 100%;
+  width: 90%;
+  height: 90%;
   background-color: rgba(0, 0, 0, 0.52);
   left: 0;
   top: 0;
@@ -892,6 +892,7 @@ template {
 
 .slider__item {
   text-align: center;
+  outline: none;
 }
 
 .slider__item img {
