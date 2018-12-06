@@ -8,10 +8,34 @@
             img
                 max-width: 95%
     .modal
+        width: 90%
         &-wrap
             padding-left: 45px
+    .request
+        &-form
+            &__title
+                font-size: 20px
+        &-text
+            &__title
+                font-size: 20px
         
 @media (max-width: 992px)
+    .request
+        &-wrap
+            flex-direction: column
+        &-info
+            width: 100%
+            padding-top: 50px
+            
+        &:before
+            width: 100%
+        &:after
+            display: none
+        &-form
+            &__txt
+                margin-bottom: 30px
+        &-text
+           margin: auto 
     .portfolio
         background-color: $light-bg-color
         &:before
@@ -178,6 +202,16 @@
     
 
 @media (max-width: 375px)
+    .request
+        &-text
+            &__title
+                font-size: 15px
+            &__subtitle
+                font-size: 13px
+        &-advantage__txt
+            font-size: 15px
+        
+
     .container
         width: 80%
     .header
