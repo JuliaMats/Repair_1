@@ -1089,6 +1089,94 @@ template {
   padding-left: 32px;
 }
 
+.price {
+  margin-top: 100px;
+}
+
+.price-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card {
+  max-width: 370px;
+  min-height: 410px;
+  text-align: center;
+  padding-bottom: 47px;
+  border: 1px solid #e8e8e8;
+  margin: 10px;
+}
+
+.card:hover {
+  -webkit-box-shadow: 0 20px 25px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 20px 25px rgba(0, 0, 0, 0.1);
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.card:hover > .card__img-wrap:after {
+  opacity: 1;
+}
+
+.card__img-wrap {
+  position: relative;
+  margin-bottom: 39px;
+}
+
+.card__img-wrap:after {
+  content: '';
+  width: 100%;
+  height: 98.8%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#ffd200), to(rgba(255, 255, 255, 0)));
+  background-image: linear-gradient(to top, #ffd200 0%, rgba(255, 255, 255, 0) 100%);
+  opacity: 0;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.card__title {
+  margin-bottom: 31px;
+  font-style: 18px;
+}
+
+.card__link {
+  font-size: 16px;
+  font-family: 'Museo Sans Bold', sans-serif;
+  text-decoration: none;
+  color: #333333;
+  display: inline-block;
+  position: relative;
+}
+
+.card__link:after {
+  content: '';
+  width: 100%;
+  height: 3px;
+  background-color: #ffd200;
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.card__link:hover:after {
+  height: 13px;
+  z-index: -1;
+}
+
 *, *::after, *::before {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -1116,6 +1204,13 @@ img {
 
 .section-title_center {
   text-align: center;
+}
+
+.section-subtitle {
+  font-size: 20px;
+  text-align: center;
+  margin-top: 58px;
+  margin-bottom: 58px;
 }
 
 @media (max-width: 1200px) {
