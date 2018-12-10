@@ -83,6 +83,7 @@
             min-width: 35px
             height: 35px
             border-radius: 50%
+            position: relative
             border: 2px solid #000000
             display: flex
             justify-content: center
@@ -90,7 +91,10 @@
             span
                 font-size: 14px
                 +bold
-                position: relative
-                right: -1px
+                position: absolute
+                top: 50%
+                left: 50%
+                transform: translate(-50%, -50%)
+            
         &__txt
             padding-left: 32px

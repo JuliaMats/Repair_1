@@ -1,8 +1,8 @@
 .contacts
     display: flex
     flex-direction: column
-    align-items: center
     flex-basis: 45%
+    padding-left: 130px
     &-title
         padding-top: 55px
         padding-bottom: 55px
@@ -16,14 +16,23 @@
             max-width: 20px
             max-height: 20px
             margin-top: 8px
-            margin-right: 25px
-            
+            margin-right: 25px    
         &__txt
             font-size: 16px
             font-weight: 400
             line-height: 26px
             span
                 +bold
+        &__tel
+            text-decoration: none
+            color: $text-color
+            +bold
+            font-size: 16px
+            font-weight: 400
+            line-height: 26px
+            &:hover
+                color: lighten($text-color, 20%)
+                cursor: pointer
 .footer
     display: flex
 .map
