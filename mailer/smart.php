@@ -37,7 +37,8 @@ $mail->AltBody = 'Это альтернативный текст';
 if(!$mail->send()) {
     return false;
 } else {
-    header ('location: ../thanks.html');
+    return true;
+
 }
 
 ?>
