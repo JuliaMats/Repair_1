@@ -1637,6 +1637,9 @@ img {
   .form-txt__tel::before {
     display: none;
   }
+  .feedback:before {
+    display: none;
+  }
 }
 
 @media (max-width: 830px) {
@@ -1737,9 +1740,6 @@ img {
   }
   .header-logo {
     text-align: right;
-  }
-  .feedback:before {
-    display: none;
   }
   .form {
     width: 100%;
