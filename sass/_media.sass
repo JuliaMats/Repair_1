@@ -30,23 +30,15 @@
         &-text
             &__title
                 font-size: 20px
-    .map
-        flex-basis: 40%
-    .contacts
-        flex-basis: 55%
 
 @media (max-width: 992px)
     .request
         flex-direction: column
-        
         &:before
             width: 100%
-            height: 50%
-            top: 0
-            z-index: -1
+            background-color: $light-bg-color
         &:after
             display: none
-            
         &-text
             max-width: 475px
         &-wrap
@@ -55,6 +47,7 @@
             width: 100%
             padding-top: 50px
         &-form
+            padding-top: 35px
             &__txt
                 margin-bottom: 30px
     .doc
@@ -64,8 +57,6 @@
         &-img
             width: 225px
             height: 315px
-    .request
-        
     .portfolio
         background-color: $light-bg-color
         &:before
@@ -126,6 +117,30 @@
             display: none
     .feedback:before
         display: none
+    .footer
+        flex-wrap: wrap
+        .contacts
+            width: 767px
+            text-align: center
+            padding: 0
+            margin: 0 auto
+            &-title br
+                display: none
+            &-items__descr
+                position: relative
+                justify-content: center
+                padding-top: 40px
+            &-items__img
+                position: absolute
+                top: 0
+                max-width: none
+                max-height: none
+                margin: 0
+        .map
+            width: 100%
+            order: 2
+    .footer .map > *
+        height: 400px !important
 
 @media (max-width: 830px)
     .guarantee
@@ -136,6 +151,7 @@
         &-item
             margin-bottom: 27px
             padding: 0
+            width: 100%
             max-width: 370px
     .doc
         margin-bottom: 125px
@@ -203,9 +219,10 @@
             flex-direction: column
         &-logo
             text-align: right
-    
     .form
         width: 100%
+    .footer .contacts
+        width: 576px
 
 @media (max-width: 620px)
     .request
@@ -280,6 +297,10 @@
         &-txt
             flex-direction: column
             justify-content: center
+    .guarantee-name
+        padding: 0 17px 0
+    .footer .contacts
+        width: 80%
     
 @media (max-width: 480px)
     .card
