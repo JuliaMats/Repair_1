@@ -1,0 +1,47 @@
+.checkout 
+    &-items
+        &__logo
+            display: flex
+            flex-direction: column
+            align-items: center
+            &-wrap
+                display: flex
+                justify-content: space-around
+                flex-wrap: wrap
+        &__txt
+            font-size: 14px
+            font-weight: 400
+            line-height: 20px
+            text-align: center
+            margin-top: 30px
+            margin-bottom: 100px
+            +bold
+        &__img
+            margin-bottom: 30px  
+            margin-top: 14px
+            position: relative
+            width: 100px
+            height: 100px
+            border: 3px solid #ffd200
+            border-radius: 50%
+            img
+                position: absolute
+                top: 50%
+                left: 50%
+                transform: translate(-50%, -50%)
+.checkout-descr
+    background-color: $primary-color
+    &__wrap
+        display: flex
+        align-items: center
+        justify-content: center
+    &__txt
+        text-align: center
+        font-size: 25px
+        font-weight: 300
+        line-height: 50px
+    &__adv
+        margin-top: 99px
+        margin-bottom: 100px
+
+                

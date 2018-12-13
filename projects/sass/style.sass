@@ -1,0 +1,41 @@
+@import '_var.sass'
+@import '_mixin.sass'
+@import '_normalize.scss'
+@import '_fonts.scss'
+@import '_interface.sass'
+@import '_header.sass'
+@import '_main.sass'
+@import '_feedback.sass'
+@import '_modal.sass'
+@import '_portfolio.sass'
+@import '_request.sass'
+@import '_price.sass'
+@import '_checkout.sass'
+@import '_footer.sass'
+@import '_guarantee.sass'
+@import '_doc.sass'
+*, *::after, *::before
+    box-sizing: border-box
+body
+    min-width: 320px
+    font-family: 'Museo Sans Light', sans-serif
+    color: $text-color
+    overflow-x: hidden
+.container
+    width: 1170px
+    margin: 0 auto
+img
+    max-width: 100%
+.section
+    &-title
+        +bold
+        line-height: 45px
+        &_center
+            text-align: center
+    &-subtitle
+        font-size: 20px
+        text-align: center
+        margin-top: 58px
+        margin-bottom: 58px
+
+@import '_media.sass'

@@ -1,0 +1,142 @@
+.modal
+    position: fixed
+    width: 100%
+    height: 100%
+    background-color: rgba(#000, 0.52)
+    left: 0
+    top: 0
+    z-index: 99
+    &_hidden
+        display: none
+    &_visible
+        display: flex
+    &__dialog
+        margin: auto
+        width: 1170px
+        height: 674px
+        background-color: #fff
+        display: flex
+        position: relative
+    &__close
+        position: absolute
+        top: 5px
+        right: 5px
+        &:hover
+            cursor: pointer
+    &-wrap
+        display: flex
+        width: 50%
+        justify-content: space-between
+        padding-left: 79px
+        background-color: #f7f7f7
+    &-img
+        max-width: 120px
+        margin-bottom: 15px
+        margin-right: 29px
+        &__line
+            margin-top: 13px
+            margin-bottom: 12px
+            max-width: 42px
+    &-descr__bath
+        display: flex
+        flex-direction: column
+        justify-content: center
+        max-height: 85px
+        margin: 0
+        p
+            margin: 0
+            +bold
+        .price
+            +bold
+    &-descr__toilet
+        display: flex
+        flex-direction: column
+        justify-content: center
+        max-height: 85px
+        margin: 0
+        p
+            margin: 0
+            +bold
+        .price
+            +bold
+    &-descr__room
+        display: flex
+        flex-direction: column
+        justify-content: center
+        max-height: 85px
+        margin: 0
+        p
+            margin: 0
+            +bold
+        .price
+            +bold
+    &-text
+        padding-top: 80px
+        margin: 0
+        &__bath
+            display: flex
+            justify-content: flex-start
+        &__toilet
+            display: flex
+        &__room
+            display: flex
+    ul
+        padding-left: 17px
+        line-height: 25px
+    li
+        color: $primary-color
+        span
+            font-size: 14px
+            font-weight: 400 
+            line-height: 25px
+            color: #000000
+    &-form
+        text-align: center
+        width: 50%
+        padding-top: 59px
+        margin-bottom: 76px
+        &__input
+            width: 370px
+            height: 65px
+            width: 370px
+            margin-bottom: 15px
+            outline: none
+        &__button
+            margin-top: 15px
+            width: 368px
+            margin-bottom: 33px
+        &__phone
+            font-size: 24px
+            font-weight: 700
+            text-decoration: none
+            color: $text-color
+            margin-top: 13px
+            margin-bottom: 76px
+        &__descr
+            text-align: center
+        &__txt
+            padding-bottom: 13px
+        &_phone
+            margin-bottom: 76px
+    
+.form
+    &-wrap
+        display: inline-block
+        padding: 0
+    &__title
+        text-align: center
+        font-size: 22px
+        font-weight: 400
+        line-height: 33px
+        margin-bottom: 45px
+        margin-top: 10px
+    &__subtitle
+        text-align: center
+        font-size: 16px
+        font-weight: 400
+        line-height: 35px
+        margin-bottom: 40px
+.items
+    width: 100%
+    &-name
+        margin-top: 40px
